@@ -89,15 +89,15 @@ class EventListing extends Component {
     return (
       <div className="container mt-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand">Event Management</a>
+          <button class="navbar-brand">Event Management</button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active">
+              <button class="nav-item nav-link active">
                 Home <span class="sr-only"></span>
-              </a>
-              <a class="nav-item nav-link">Notifications</a>
-              <a class="nav-item nav-link">Help</a>
-              <a class="nav-item nav-link">Profile</a>
+              </button>
+              <button class="nav-item nav-link">Notifications</button>
+              <button class="nav-item nav-link">Help</button>
+              <button class="nav-item nav-link ">Profile</button>
             </div>
           </div>
         </nav>
