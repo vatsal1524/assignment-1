@@ -85,19 +85,49 @@ class EventListing extends Component {
     this.setState({ events });
   };
 
+  clickSpan = () => {};
+
   render() {
     return (
       <div className="container mt-4">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-brand">Event Management</button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <button class="nav-item nav-link active">
-                Home <span class="sr-only"></span>
-              </button>
-              <button class="nav-item nav-link">Notifications</button>
-              <button class="nav-item nav-link">Help</button>
-              <button class="nav-item nav-link ">Profile</button>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <span
+            className="navbar-brand"
+            style={{ cursor: "pointer" }}
+            onClick={this.clickSpan}
+          >
+            Event Management
+          </span>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <span
+                className="nav-item nav-link active"
+                style={{ cursor: "pointer" }}
+                onClick={this.clickSpan}
+              >
+                Home <span className="sr-only"></span>
+              </span>
+              <span
+                className="nav-item nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={this.clickSpan}
+              >
+                Notifications
+              </span>
+              <span
+                className="nav-item nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={this.clickSpan}
+              >
+                Help
+              </span>
+              <span
+                className="nav-item nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={this.clickSpan}
+              >
+                Profile
+              </span>
             </div>
           </div>
         </nav>
